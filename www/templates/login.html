@@ -1,0 +1,27 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Se connecter</h1>
+    <div class="buttons">
+      <button class="button button-assertive"
+       ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Nom d'utilisateur"
+           ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Mot de passe"
+           ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive"
+          type="submit">Se connecter</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
